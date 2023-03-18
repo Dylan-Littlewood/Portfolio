@@ -1,0 +1,58 @@
+@use 'components/appbar';
+@use 'utils/layout';
+@use 'layout/welcome';
+
+/* makes sizing simpler */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* remove default spacing */
+/* force styling of type through styling, rather than elements */
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* min body height */
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* responsive images/videos */
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+:root {
+  --color-primary: #ff7f50;
+  --color-secondary: #15ffd1;
+  --color-background: #efefef;
+  --color-foreground: #3d4143;
+  --color-text: #242728;
+  --color-text-alt: #efefef;
+
+  @media (prefers-color-scheme: dark) {
+    --color-secondary: #008a6e;
+    --color-background: #3d4143;
+    --color-foreground: #efefef;
+    --color-text: #efefef;
+    --color-text-alt: #3d4143;
+  }
+}
+
+body {
+  background-color: var(--color-background);
+  font-family: 'Poppins', sans-serif;
+}

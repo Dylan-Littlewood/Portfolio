@@ -1,0 +1,53 @@
+.appbar {
+  width: 100vw;
+  position: fixed;
+  box-shadow: 0px -26px 21px 18px #000000;
+}
+
+.appbar-wrapper {
+  padding: 1em 9em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-inline: auto;
+  max-width: 1920px;
+}
+
+.site-title {
+  color: var(--color-text);
+  font-size: 2rem;
+  font-weight: 600;
+  span {
+    color: var(--color-primary);
+  }
+}
+
+.logo {
+  width: 3rem;
+  height: 3rem;
+}
+
+.primary-navigation {
+  --gap: 3.75rem;
+  flex-direction: column;
+  position: relative;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  a {
+    text-decoration: none;
+    color: var(--color-text);
+    font-weight: 600;
+    font-size: 1.25rem;
+    &:hover {
+      color: var(--color-secondary);
+    }
+  }
+  @media (min-width: 1200px) {
+    flex-direction: row;
+  }
+}
+
+.appbar-spacer {
+  height: 5rem;
+}
