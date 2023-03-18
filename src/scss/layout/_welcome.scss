@@ -32,22 +32,6 @@
   max-width: 1920px;
 }
 
-.triangles::after {
-  content: '';
-  background: var(--color-primary);
-  position: absolute;
-  z-index: -1000;
-  inset: 0rem;
-  transform: skewY(-35.25deg);
-}
-.triangles {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  margin-inline: auto;
-}
 .test {
-  position: relative;
-  margin-inline: auto;
-  height: 10rem;
+  height: 2000px;
 }

@@ -1,7 +1,16 @@
 .appbar {
   width: 100vw;
-  position: fixed;
-  box-shadow: 0px -26px 21px 18px #000000;
+  background-color: var(--color-background);
+  position: sticky;
+  top: -17rem;
+
+  &::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    box-shadow: 0px -26px 21px 18px #000000;
+  }
 }
 
 .appbar-wrapper {
@@ -15,32 +24,57 @@
 
 .site-title {
   color: var(--color-text);
-  font-size: 2rem;
   font-weight: 600;
   span {
     color: var(--color-primary);
   }
 }
 
+.title-group {
+  display: flex;
+  position: sticky;
+  align-items: center;
+  top: 1rem;
+  gap: var(--gap, 1rem);
+  font-size: 3rem;
+  transition: all 0.2s ease-in-out;
+  &[data-size='small'] {
+    font-size: 1.5rem;
+    //align-self: flex-end;
+    .logo {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+  }
+}
 .logo {
-  width: 3rem;
-  height: 3rem;
+  transition: all 0.2s ease-in-out;
+  width: 4rem;
+  height: 4rem;
 }
 
 .primary-navigation {
-  --gap: 3.75rem;
+  --gap: 2.5rem;
   flex-direction: column;
   position: relative;
   list-style: none;
-  padding: 0;
+  padding: 0.5rem;
   margin: 0;
+  &::before {
+    content: '';
+    background: var(--color-primary);
+    position: absolute;
+    z-index: -1000;
+    inset: -18.5rem -14rem -5rem 4.4rem;
+    transform: skew(-54.75deg);
+  }
   a {
     text-decoration: none;
-    color: var(--color-text);
+    color: var(--color-text-alt);
     font-weight: 600;
-    font-size: 1.25rem;
+    font-size: 1rem;
     &:hover {
-      color: var(--color-secondary);
+      color: var(--color-text);
     }
   }
   @media (min-width: 1200px) {
@@ -48,6 +82,43 @@
   }
 }
 
-.appbar-spacer {
-  height: 5rem;
+.triangles {
+  height: 17rem;
+  svg {
+    height: 14rem;
+  }
+}
+
+.nav-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  font-size: 5rem;
+  transition: all 0.5s ease;
+  &[data-size='small'] {
+    font-size: 1rem;
+  }
+}
+
+.socialLinks {
+  position: absolute;
+  width: 25rem;
+  bottom: -4.1rem;
+  transform: translateX(-8.3rem);
+  ul {
+    list-style: none;
+    justify-content: space-evenly;
+    justify-items: center;
+    height: 4rem;
+  }
+}
+
+.social-icon {
+  color: var(--color-background);
+  height: 1.5rem;
+  &:hover {
+    color: var(--color-text);
+  }
 }

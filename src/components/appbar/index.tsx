@@ -1,21 +1,22 @@
 import Navbar from './navbar';
-import Logo from '../../assets/SVG/Logo';
+import Triangles from '../../assets/SVG/Triangles';
+import ScrollHeader from './navbar/scrollHeader';
+import SocialLinks from './navbar/socialLinks';
 
 export default function Appbar() {
   return (
     <>
       <header className='appbar'>
         <div className='appbar-wrapper'>
-          <div className='flex-group'>
-            <Logo />
-            <h1 className='site-title'>
-              <span>Dylan</span> Littlewood
-            </h1>
+          <ScrollHeader />
+
+          <div className='nav-group'>
+            <Triangles />
+            <Navbar />
+            <SocialLinks />
           </div>
-          <Navbar />
         </div>
       </header>
-      <div className='appbar-spacer'></div>
     </>
   );
 }
