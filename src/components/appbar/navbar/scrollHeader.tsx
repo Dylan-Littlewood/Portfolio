@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-scroll';
 import Logo from '../../../assets/SVG/Logo';
 
 export default function ScrollHeader() {
@@ -22,12 +23,19 @@ export default function ScrollHeader() {
   }, []);
 
   return (
-    <div data-size={`${small ? 'small' : 'large'}`} className='title-group'>
+    <Link
+      to='home'
+      spy={false}
+      smooth={true}
+      offset={0}
+      duration={500}
+      data-size={`${small ? 'small' : 'large'}`}
+      className='title-group link'
+    >
       <Logo />
       <h1 className='site-title'>
         <span>Dylan</span> Littlewood
       </h1>
-    </div>
+    </Link>
   );
 }
-// window.pageYOffset > 200

@@ -36,21 +36,23 @@
   align-items: center;
   top: 1rem;
   gap: var(--gap, 1rem);
-  font-size: 3rem;
+  font-size: 1.5rem;
   transition: all 0.2s ease-in-out;
-  &[data-size='small'] {
-    font-size: 1.5rem;
-    //align-self: flex-end;
-    .logo {
-      width: 2.5rem;
-      height: 2.5rem;
+  @media (min-width: 1200px) {
+    &[data-size='large'] {
+      font-size: 3rem;
+      //align-self: flex-end;
+      .logo {
+        width: 4rem;
+        height: 4rem;
+      }
     }
   }
 }
 .logo {
   transition: all 0.2s ease-in-out;
-  width: 4rem;
-  height: 4rem;
+  width: 2.5rem;
+  height: 2.5rem;
 }
 
 .primary-navigation {
@@ -73,6 +75,7 @@
     color: var(--color-text-alt);
     font-weight: 600;
     font-size: 1rem;
+    position: relative;
     &:hover {
       color: var(--color-text);
     }
@@ -94,14 +97,6 @@
   flex-direction: column;
 }
 
-.header {
-  font-size: 5rem;
-  transition: all 0.5s ease;
-  &[data-size='small'] {
-    font-size: 1rem;
-  }
-}
-
 .socialLinks {
   position: absolute;
   width: 25rem;
@@ -121,4 +116,21 @@
   &:hover {
     color: var(--color-text);
   }
+}
+
+.link {
+  cursor: pointer;
+}
+
+.primary-navigation .link::after {
+  content: '';
+  position: absolute;
+  inset: 1.75rem 100% -0.7rem 100%;
+  background-color: var(--color-text);
+  border-radius: 100vw;
+  transition: all 0.5s ease;
+}
+
+.primary-navigation .link.active::after {
+  inset: 1.75rem -0.5rem -0.7rem -0.5rem;
 }

@@ -1,18 +1,28 @@
+import { Link } from 'react-scroll';
+
 export default function Navbar() {
   return (
     <nav>
       <ul id='primary-navigation' className='primary-navigation flex-group'>
-        <li className='active'>
-          <a href='#Home'>Home</a>
+        <li>
+          <Link className='link' to='home' spy={true} smooth={true} offset={0} duration={500}>
+            Home
+          </Link>
         </li>
         <li>
-          <a href='#About'>About</a>
+          <Link className='link' to='about' spy={true} smooth={true} offset={0} duration={500}>
+            About
+          </Link>
         </li>
         <li>
-          <a href='#CV'>CV</a>
+          <Link className='link' to='cv' spy={true} smooth={true} offset={0} duration={500}>
+            CV
+          </Link>
         </li>
         <li>
-          <a href='#Portfolio'>Portfolio</a>
+          <Link className='link' to='portfolio' spy={true} smooth={true} offset={0} duration={500}>
+            Portfolio
+          </Link>
         </li>
       </ul>
     </nav>
