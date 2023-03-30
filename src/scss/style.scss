@@ -37,16 +37,20 @@ video {
 
 :root {
   --color-primary: #ff7f50;
-  --color-secondary: #15ffd1;
+  --color-secondary: #4cc0b4;
   --color-background: #efefef;
   --color-foreground: #3d4143;
+  --color-text-heading: #242728;
+  --color-text-subheading: #242728b0;
   --color-text: #242728;
   --color-text-alt: #efefef;
 
   @media (prefers-color-scheme: dark) {
-    --color-secondary: #008a6e;
+    --color-secondary: #2c837a;
     --color-background: #3d4143;
     --color-foreground: #efefef;
+    --color-text-heading: #efefef;
+    --color-text-subheading: #efefefb0;
     --color-text: #efefef;
     --color-text-alt: #3d4143;
   }

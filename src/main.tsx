@@ -8,9 +8,9 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
     <Appbar />
     <section className='welcome-section'>
       <div className='home' id='home'></div>
-      <h2 className='section-title'>Welcome</h2>
-      <p className='section-content'>My name is Dylan Littlewood. I am a software engineer from Sheffield.</p>
-      <button className='button call-to-action'>Hire Me</button>
+      <h2 className='section-title'>Making Your Designs A Reality</h2>
+      <p className='section-content'>Frontend software developer from Sheffield.</p>
+      <button className='button call-to-action'>See my work</button>
     </section>
     <div className='test' id='about'>
       About Me
