@@ -12,10 +12,10 @@ export default function ScrollHeader() {
         setSmall(() => {
           if (lastPos >= window.pageYOffset) {
             lastPos = window.pageYOffset;
-            return window.pageYOffset > 200;
+            return window.pageYOffset > 240;
           } else {
             lastPos = window.pageYOffset;
-            return window.pageYOffset > 180;
+            return window.pageYOffset > 220;
           }
         })
       );
@@ -33,6 +33,7 @@ export default function ScrollHeader() {
       className='title-group link'
     >
       <Logo />
+
       <h1 className='site-title'>
         <span>Dylan</span> Littlewood
       </h1>

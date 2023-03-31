@@ -54,6 +54,10 @@ video {
     --color-text: #efefef;
     --color-text-alt: #3d4143;
   }
+
+  @media (max-width: 600px) {
+    font-size: 12px;
+  }
 }
 
 body {

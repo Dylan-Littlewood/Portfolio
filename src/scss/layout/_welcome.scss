@@ -1,14 +1,22 @@
 .section-title {
   font-weight: 600;
-  font-size: 3rem;
+  font-size: 4rem;
   color: var(--color-text-heading);
+  span {
+    color: var(--color-secondary);
+    text-decoration: underline solid;
+    text-underline-offset: 0.6rem;
+    font-size: 4rem;
+  }
+  font-family: 'Bebas Neue', cursive;
 }
 
 .section-content {
   font-weight: 400;
   font-size: 1.25rem;
-  margin-bottom: 2rem;
   color: var(--color-text-subheading);
+  margin-block: 0.5rem 3rem;
+  padding-left: 0.5rem;
 }
 
 .button {
@@ -26,6 +34,9 @@
 
 .welcome-section {
   padding: 6rem 10rem;
+  @media (max-width: 1200px) {
+    padding-inline: 2.5rem;
+  }
   margin: 5rem auto;
   max-width: 1920px;
   position: relative;
