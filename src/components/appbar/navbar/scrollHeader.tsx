@@ -24,6 +24,7 @@ export default function ScrollHeader() {
 
   return (
     <Link
+      href='#Home'
       to='home'
       spy={false}
       smooth={true}

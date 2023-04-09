@@ -3,3 +3,14 @@
   align-items: center;
   gap: var(--gap, 1rem);
 }
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  white-space: nowrap;
+  border-width: 0;
+}
