@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-scroll';
 import Logo from '../../../assets/SVG/Logo';
 
-export default function ScrollHeader() {
+export default function ScrollLogo() {
   const [small, setSmall] = useState(false);
   var lastPos = 0;
 

@@ -1,9 +1,10 @@
 import Navbar from './navbar';
 import Triangles from '../../assets/SVG/Triangles';
-import ScrollHeader from './navbar/scrollHeader';
+import ScrollLogo from './navbar/scrollLogo';
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBarsStaggered, faXmark } from '@fortawesome/free-solid-svg-icons';
+import NavItem from './navbar/navItem';
 
 export default function Appbar() {
   const [open, setOpen] = useState(false);
@@ -12,7 +13,7 @@ export default function Appbar() {
     <>
       <header className='appbar'>
         <div className='appbar-wrapper'>
-          <ScrollHeader />
+          <ScrollLogo />
           <button
             className='nav-button'
             aria-controls='primary-navigation'
@@ -28,7 +29,12 @@ export default function Appbar() {
           </button>
           <div className='nav-group' data-visible={open}>
             <Triangles />
-            <Navbar setOpen={setOpen} />
+            <Navbar>
+              <NavItem link='Home' setOpen={setOpen} />
+              <NavItem link='About' setOpen={setOpen} />
+              <NavItem link='CV' setOpen={setOpen} />
+              <NavItem link='Portfolio' setOpen={setOpen} />
+            </Navbar>
           </div>
         </div>
       </header>

@@ -1,33 +1,23 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faInstagram, faLinkedin, faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 export default function SocialLinks() {
   return (
-    <div className='socialLinks'>
-      <ul className='flex-group'>
+    <div className='social-links'>
+      <ul className='social-nav flex-group'>
         <li>
-          <a href='#'>
-            <FontAwesomeIcon className='social-icon' icon={faFacebook} />
+          <a className='social-link' href='#'>
+            Contact Me
           </a>
         </li>
         <li>
-          <a href='#'>
-            <FontAwesomeIcon className='social-icon' icon={faInstagram} />
+          <a className='social-icon' href='https://github.com/Dylan-Littlewood'>
+            <FontAwesomeIcon icon={faGithub} />
           </a>
         </li>
         <li>
-          <a href='#'>
-            <FontAwesomeIcon className='social-icon' icon={faLinkedin} />
-          </a>
-        </li>
-        <li>
-          <a href='#'>
-            <FontAwesomeIcon className='social-icon' icon={faGithub} />
-          </a>
-        </li>
-        <li>
-          <a href='#'>
-            <FontAwesomeIcon className='social-icon' icon={faTwitter} />
+          <a className='social-icon' href='https://www.linkedin.com/in/dylan-littlewood/'>
+            <FontAwesomeIcon icon={faLinkedin} />
           </a>
         </li>
       </ul>

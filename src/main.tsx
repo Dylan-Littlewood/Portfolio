@@ -6,6 +6,7 @@ import './scss/style.scss';
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
     <Appbar />
+
     <section className='welcome-section'>
       <div className='home' id='home'></div>
       <h2 className='section-title'>
@@ -23,6 +24,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
     <div className='test' id='portfolio'>
       Portfolio Projects
     </div>
+
     <footer></footer>
   </React.StrictMode>
 );
