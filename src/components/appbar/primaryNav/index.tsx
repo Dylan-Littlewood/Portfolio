@@ -1,7 +1,7 @@
-import SocialLinks from './socialLinks';
+import ContactNav from './contactNav';
 import { ReactElement, JSXElementConstructor, ReactFragment, ReactPortal } from 'react';
 
-export default function Navbar(props: {
+export default function PrimaryNav(props: {
   children:
     | string
     | number
@@ -17,7 +17,7 @@ export default function Navbar(props: {
       <ul id='primary-navigation' className='primary-navigation flex-group'>
         {props.children}
       </ul>
-      <SocialLinks />
+      <ContactNav />
     </nav>
   );
 }

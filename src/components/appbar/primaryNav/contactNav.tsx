@@ -1,22 +1,22 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 
-export default function SocialLinks() {
+export default function ContactNav() {
   return (
-    <div className='social-links'>
-      <ul className='social-nav flex-group'>
+    <div className='contact-wrapper'>
+      <ul className='contact-navigation flex-group'>
         <li>
-          <a className='social-link' href='#'>
+          <a className='contact-button' href='#'>
             Contact Me
           </a>
         </li>
         <li>
-          <a className='social-icon' href='https://github.com/Dylan-Littlewood'>
+          <a className='contact-social' href='https://github.com/Dylan-Littlewood'>
             <FontAwesomeIcon icon={faGithub} />
           </a>
         </li>
         <li>
-          <a className='social-icon' href='https://www.linkedin.com/in/dylan-littlewood/'>
+          <a className='contact-social' href='https://www.linkedin.com/in/dylan-littlewood/'>
             <FontAwesomeIcon icon={faLinkedin} />
           </a>
         </li>

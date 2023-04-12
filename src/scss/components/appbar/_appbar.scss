@@ -1,0 +1,108 @@
+@use 'primary_nav';
+@use 'contact_nav';
+
+.appbar-wrapper {
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-inline: auto;
+  max-width: 1920px;
+
+  @media (min-width: 1200px) {
+    padding: 1rem 9rem;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      width: 345px;
+      height: 345px;
+      opacity: 50%;
+      background: linear-gradient(285deg, var(--color-background) 38%, rgba(61, 65, 67, 0) 52%),
+        linear-gradient(30deg, var(--color-background) 15%, rgba(61, 65, 67, 0) 35%),
+        linear-gradient(345deg, var(--color-background) 25%, rgba(61, 65, 67, 0) 35%),
+        linear-gradient(355deg, var(--color-background) 30%, rgba(61, 65, 67, 0) 40%),
+        linear-gradient(90deg, var(--color-background) 1%, rgba(61, 65, 67, 0) 10%),
+        url(/src/assets/images/Headshot.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      mix-blend-mode: luminosity;
+      z-index: -1;
+    }
+  }
+}
+
+.appbar {
+  width: 100vw;
+  background-color: var(--color-background);
+  position: sticky;
+  top: -17rem;
+  @media (max-width: 1199px) {
+    top: 0;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    box-shadow: 0px -26px 21px 18px #000000;
+  }
+}
+
+.site-title {
+  color: var(--color-text);
+  font-weight: 600;
+  span {
+    color: var(--color-primary);
+  }
+}
+
+.title-group {
+  text-decoration: none;
+  display: flex;
+  position: sticky;
+  align-items: center;
+  top: 1rem;
+  gap: var(--gap, 1rem);
+  font-size: 1.5rem;
+  transition: all 0.2s ease-in-out;
+  @media (min-width: 1200px) {
+    &[data-size='large'] {
+      font-size: 2rem;
+      .logo {
+        width: 3rem;
+        height: 3rem;
+      }
+    }
+  }
+}
+
+.logo {
+  transition: all 0.2s ease-in-out;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.triangles {
+  height: 17em;
+  flex-shrink: 0;
+  svg {
+    height: 14em;
+  }
+  @media (max-width: 1199px) {
+    font-size: 12px;
+    align-self: flex-start;
+    margin-top: 5em;
+    rotate: -10deg;
+    &::before {
+      content: '';
+      rotate: -35deg;
+      translate: -87px -87px;
+      z-index: -1;
+      position: absolute;
+      inset: -5em -10em 0 -10em;
+      background-color: var(--color-background);
+    }
+  }
+}

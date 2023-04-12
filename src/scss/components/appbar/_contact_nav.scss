@@ -1,0 +1,43 @@
+.contact-wrapper {
+  position: absolute;
+  left: 0px;
+  bottom: 0;
+  width: 100%;
+
+  @media (min-width: 1200px) {
+    bottom: -4.1rem;
+    transform: translateX(-8.3rem);
+    width: 25rem;
+    left: auto;
+  }
+}
+.contact-navigation {
+  list-style: none;
+  justify-content: space-evenly;
+  height: 4rem;
+}
+.contact-button {
+  color: var(--color-background);
+  text-decoration: none;
+  border: var(--color-background) solid 2px;
+  border-radius: 100vh;
+  padding: 0.2rem 0.6rem;
+  font-weight: bold;
+  font-size: 0.75rem;
+  &:hover {
+    color: var(--color-text);
+    border: var(--color-text) solid 3px;
+  }
+}
+
+.contact-social {
+  color: var(--color-background);
+  height: 1.5rem;
+  &:hover {
+    color: var(--color-text);
+  }
+  svg {
+    height: 1.5rem;
+    vertical-align: -0.5em;
+  }
+}

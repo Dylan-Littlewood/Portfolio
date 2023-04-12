@@ -1,4 +1,4 @@
-@use 'components/appbar';
+@use 'components/appbar/appbar';
 @use 'utils/layout';
 @use 'layout/welcome';
 
@@ -35,6 +35,7 @@ video {
   max-width: 100%;
 }
 
+/* default colors for website */
 :root {
   --color-primary: #ff7f50;
   --color-secondary: #4cc0b4;
@@ -55,11 +56,12 @@ video {
     --color-text-alt: #3d4143;
   }
 
-  @media (max-width: 1200px) {
+  @media (max-width: 1199px) {
     font-size: 12px;
   }
 }
 
+/* default styles */
 body {
   background-color: var(--color-background);
   font-family: 'Poppins', sans-serif;

@@ -6,7 +6,7 @@ export default function NavItem(props: { link: string; setOpen: (arg0: boolean) 
     <li>
       <Link
         href={'#' && props.link}
-        className='link'
+        className='primary-navigation-link'
         to={props.link.toLowerCase()}
         spy={true}
         smooth={true}

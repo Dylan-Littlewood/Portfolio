@@ -1,10 +1,10 @@
-import Navbar from './navbar';
+import PrimaryNav from './primaryNav';
 import Triangles from '../../assets/SVG/Triangles';
-import ScrollLogo from './navbar/scrollLogo';
+import ScrollLogo from './scrollLogo';
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBarsStaggered, faXmark } from '@fortawesome/free-solid-svg-icons';
-import NavItem from './navbar/navItem';
+import NavItem from './primaryNav/navItem';
 
 export default function Appbar() {
   const [open, setOpen] = useState(false);
@@ -29,12 +29,12 @@ export default function Appbar() {
           </button>
           <div className='nav-group' data-visible={open}>
             <Triangles />
-            <Navbar>
+            <PrimaryNav>
               <NavItem link='Home' setOpen={setOpen} />
               <NavItem link='About' setOpen={setOpen} />
               <NavItem link='CV' setOpen={setOpen} />
               <NavItem link='Portfolio' setOpen={setOpen} />
-            </Navbar>
+            </PrimaryNav>
           </div>
         </div>
       </header>
