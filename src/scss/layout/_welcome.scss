@@ -32,7 +32,7 @@
   background-color: var(--color-secondary);
 }
 
-.welcome-section {
+.hero-section {
   padding: 6rem 10rem;
   @media (max-width: 1200px) {
     padding-inline: 2.5rem;
@@ -45,7 +45,7 @@
 
 .test {
   padding: 6rem 10rem;
-  height: 1000px;
+  height: 1500px;
   border: 3px solid var(--color-text-body);
   margin: 1rem;
   color: var(--color-text);
