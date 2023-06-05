@@ -1,4 +1,3 @@
-import ContactNav from './contactNav';
 import { ReactElement, JSXElementConstructor, ReactFragment, ReactPortal } from 'react';
 
 export default function PrimaryNav(props: {
@@ -17,7 +16,6 @@ export default function PrimaryNav(props: {
       <ul id='primary-navigation' className='primary-navigation flex-group'>
         {props.children}
       </ul>
-      <ContactNav />
     </nav>
   );
 }

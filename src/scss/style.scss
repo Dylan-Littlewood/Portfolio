@@ -1,6 +1,7 @@
 @use 'components/appbar/appbar';
 @use 'utils/layout';
 @use 'layout/welcome';
+@use 'components/buttons/button_styles';
 
 /* makes sizing simpler */
 
@@ -37,7 +38,7 @@ video {
 
 /* default colors for website */
 :root {
-  --color-primary: #ff7f50;
+  --color-primary: #ff8052;
   --color-secondary: #4cc0b4;
   --color-background: #efefef;
   --color-foreground: #3d4143;
@@ -45,6 +46,14 @@ video {
   --color-text-subheading: #242728b0;
   --color-text: #242728;
   --color-text-alt: #efefef;
+
+  --color-primary-hsl: 16, 100%, 66%;
+  --color-secondary-hsl: 174, 48%, 53%;
+  --color-background-hsl: 0, 0%, 94%;
+  --color-foreground-hsl: 200, 5%, 25%;
+  --color-text-heading-hsl: 195, 5%, 15%;
+  --color-text-hsl: 195, 5%, 15%;
+  --color-text-alt-hsl: 0, 0%, 94%;
 
   @media (prefers-color-scheme: dark) {
     --color-secondary: #2c837a;
@@ -54,6 +63,13 @@ video {
     --color-text-subheading: #efefefb0;
     --color-text: #efefef;
     --color-text-alt: #3d4143;
+
+    --color-secondary-hsl: 174, 50%, 34%;
+    --color-background-hsl: 200, 5%, 25%;
+    --color-foreground-hsl: 0, 0%, 94%;
+    --color-text-heading-hsl: 0, 0%, 94%;
+    --color-text-hsl: 0, 0%, 94%;
+    --color-text-alt-hsl: 200, 5%, 25%;
   }
 
   @media (max-width: 1199px) {

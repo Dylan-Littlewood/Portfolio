@@ -1,0 +1,17 @@
+.button {
+  background-color: var(--color-primary);
+  border: none;
+  border-radius: 100vw;
+  padding: 0.75em 2em;
+  color: var(--color-text);
+  font-weight: 700;
+  font-size: 1rem;
+}
+.btn-call-to-action {
+  background-color: var(--color-secondary);
+}
+
+.outline {
+  background-color: transparent;
+  border: 2px solid var(--color-foreground);
+}

@@ -6,7 +6,7 @@ export default function Hero() {
         Making <span>Your</span> Designs A Reality
       </h2>
       <p className='section-content'>Frontend software developer from Sheffield</p>
-      <button className='button call-to-action'>See my work</button>
+      <button className='button btn-call-to-action'>See my work</button>
     </section>
   );
 }
