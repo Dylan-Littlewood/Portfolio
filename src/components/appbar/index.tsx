@@ -5,6 +5,7 @@ import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBarsStaggered, faXmark } from '@fortawesome/free-solid-svg-icons';
 import NavItem from './primaryNav/navItem';
+import { CurrentProject } from '../projects';
 
 export default function Appbar() {
   const [open, setOpen] = useState(false);
@@ -13,15 +14,7 @@ export default function Appbar() {
       <header className='appbar'>
         <div className='appbar-wrapper'>
           <div>
-            <div className='current-project flex-group'>
-              <div>
-                <h3>Current Project</h3>
-                <h4>Portfolio website</h4>
-                <button className='button outline'>View</button>
-                <button className='button outline'>Source</button>
-              </div>
-              <img src='src\assets\images\image 1.png' alt='current project screenshot' />
-            </div>
+            <CurrentProject />
             <ScrollLogo />
           </div>
           <button

@@ -1,0 +1,28 @@
+
+
+{
+    "currentProject":"Portfolio Website",
+
+    "activeProjects":[
+    {
+        "title": "Portfolio Website",
+        "description": "this is a test description 1",
+        "imageURL": "/projectImages/Portfolio Website.png",
+        "liveLink": "https://portfolio-97437.web.app/",
+        "sourceLink": "https://github.com/Dylan-Littlewood/Portfolio"
+    },
+    {
+        "title": "test2",
+        "description": "this is a test description 2",
+        "imageURL": "/projectImages/Project1.png",
+        "liveLink": "https://portfolio-97437.web.app/",
+        "sourceLink": "https://github.com/Dylan-Littlewood/Portfolio"
+    },
+    {
+        "title": "test3",
+        "description": "this is a test description 3",
+        "imageURL": "/projectImages/Project1.png",
+        "liveLink": "https://portfolio-97437.web.app/",
+        "sourceLink": "https://github.com/Dylan-Littlewood/Portfolio"
+    }
+]}
