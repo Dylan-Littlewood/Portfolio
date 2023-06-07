@@ -1,7 +1,6 @@
 export default function Hero() {
   return (
     <section className='hero-section'>
-      <div className='home' id='home'></div>
       <h2 className='section-title'>
         Making <span>Your</span> Designs A Reality
       </h2>

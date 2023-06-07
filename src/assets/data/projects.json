@@ -1,7 +1,7 @@
 
 
 {
-    "currentProject":"Portfolio Website",
+    "currentProject":"Assembly Sync",
 
     "activeProjects":[
     {
@@ -12,16 +12,37 @@
         "sourceLink": "https://github.com/Dylan-Littlewood/Portfolio"
     },
     {
-        "title": "test2",
+        "title": "Assembly Sync",
         "description": "this is a test description 2",
-        "imageURL": "/projectImages/Project1.png",
-        "liveLink": "https://portfolio-97437.web.app/",
-        "sourceLink": "https://github.com/Dylan-Littlewood/Portfolio"
+        "imageURL": "/projectImages/Assembly Sync.png",
+        "liveLink": "https://assembly-sync.web.app/",
+        "sourceLink": "https://github.com/Dylan-Littlewood/assembly-sync"
     },
     {
         "title": "test3",
         "description": "this is a test description 3",
-        "imageURL": "/projectImages/Project1.png",
+        "imageURL": "/projectImages/ProjectNotFound.png",
+        "liveLink": "https://portfolio-97437.web.app/",
+        "sourceLink": "https://github.com/Dylan-Littlewood/Portfolio"
+    },
+    {
+        "title": "test4",
+        "description": "this is a test description 4",
+        "imageURL": "/projectImages/ProjectNotFound.png",
+        "liveLink": "https://portfolio-97437.web.app/",
+        "sourceLink": "https://github.com/Dylan-Littlewood/Portfolio"
+    },
+    {
+        "title": "test5",
+        "description": "this is a test description 5",
+        "imageURL": "/projectImages/ProjectNotFound.png",
+        "liveLink": "https://portfolio-97437.web.app/",
+        "sourceLink": "https://github.com/Dylan-Littlewood/Portfolio"
+    },
+    {
+        "title": "test6",
+        "description": "this is a test description 6",
+        "imageURL": "/projectImages/ProjectNotFound.png",
         "liveLink": "https://portfolio-97437.web.app/",
         "sourceLink": "https://github.com/Dylan-Littlewood/Portfolio"
     }

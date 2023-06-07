@@ -14,3 +14,16 @@
   white-space: nowrap;
   border-width: 0;
 }
+
+.home {
+  position: absolute;
+  inset: -27rem 0 -4rem 0;
+  z-index: -9999;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  justify-content: space-between;
+  row-gap: 2rem;
+}

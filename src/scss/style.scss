@@ -1,7 +1,6 @@
-@use 'components/appbar/appbar';
-@use 'utils/layout';
-@use 'layout/welcome';
-@use 'components/buttons/button_styles';
+@use 'components';
+@use 'utils';
+@use 'layout';
 
 /* makes sizing simpler */
 
@@ -81,4 +80,9 @@ video {
 body {
   background-color: var(--color-background);
   font-family: 'Poppins', sans-serif;
+}
+
+main {
+  margin-inline: auto;
+  max-width: 1920px;
 }

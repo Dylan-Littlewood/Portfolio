@@ -18,28 +18,3 @@
   margin-block: 0.5rem 3rem;
   padding-left: 0.5rem;
 }
-
-.hero-section {
-  padding: 6rem 10rem;
-  @media (max-width: 1200px) {
-    padding-inline: 2.5rem;
-  }
-  margin: 5rem auto;
-  max-width: 1920px;
-  position: relative;
-  z-index: -1;
-}
-
-.test {
-  padding: 6rem 10rem;
-  height: 1500px;
-  border: 3px solid var(--color-text-body);
-  margin: 1rem;
-  color: var(--color-text);
-  font-size: 3rem;
-}
-.home {
-  position: absolute;
-  inset: -27rem 0 -4rem 0;
-  z-index: -1;
-}

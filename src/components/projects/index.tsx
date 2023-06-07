@@ -1,4 +1,5 @@
 import projects from '@/assets/data/projects.json';
+import Card from '../card';
 
 export function CurrentProject() {
   const currentProject = projects.activeProjects.find(project => {
@@ -21,6 +22,16 @@ export function CurrentProject() {
         src={currentProject ? currentProject.imageURL : '/projectImages/ProjectNotFound.png'}
         alt='current project screenshot'
       />
+    </div>
+  );
+}
+
+export function Projects() {
+  return (
+    <div className='grid'>
+      {projects.activeProjects.map(({ title, description, imageURL }) => {
+        return <Card title={title} content={description} imageURL={imageURL} />;
+      })}
     </div>
   );
 }

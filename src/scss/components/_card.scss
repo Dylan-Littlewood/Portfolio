@@ -1,0 +1,22 @@
+.card {
+  background-color: hsl(var(--color-foreground-hsl), 0.1);
+  padding: 1rem;
+  border-radius: 1rem;
+  img {
+    border-radius: 1rem;
+  }
+}
+
+.card-title {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: var(--color-text-heading);
+  margin-block: 0.5rem;
+}
+
+.card-content {
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--color-text-subheading);
+  margin-bottom: 0.5rem;
+}

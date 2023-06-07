@@ -1,0 +1,7 @@
+.hero-section {
+  padding: 6rem 10rem;
+  @media (max-width: 1200px) {
+    padding-inline: 2.5rem;
+  }
+  margin-block: 5rem;
+}
