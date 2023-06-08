@@ -27,11 +27,15 @@
     padding-left: 1rem;
   }
   button {
-    margin-left: auto;
     display: block;
+    margin-left: auto;
     margin-block: 1.5rem;
+    padding: 0;
   }
   a {
+    color: var(--color-text);
     text-decoration: none;
+    padding: 0.75em 2em;
+    display: block;
   }
 }

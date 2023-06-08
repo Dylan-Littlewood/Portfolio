@@ -1,19 +1,13 @@
 .section-title {
   font-weight: 600;
-  font-size: 4rem;
+  font-size: 3rem;
   color: var(--color-text-heading);
-  span {
-    color: var(--color-secondary);
-    text-decoration: underline solid;
-    text-underline-offset: 0.6rem;
-    font-size: 4rem;
-  }
   font-family: 'Bebas Neue', cursive;
 }
 
 .section-content {
   font-weight: 400;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   color: var(--color-text-subheading);
   margin-block: 0.5rem 3rem;
   padding-left: 0.5rem;

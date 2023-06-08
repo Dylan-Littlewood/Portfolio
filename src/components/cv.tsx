@@ -52,9 +52,12 @@ export default function CV() {
           membership at The Climbing Hangar in Sheffield. I’m passionate about both listening to and playing music, and
           have taught myself to play a number of instruments including drums and bass guitar.
         </p>
-        <a href={MyCV} download='Dylan-Littlewood-CV' target='_blank' rel='noreferrer'>
-          <button className='button btn-call-to-action'>Download</button>
-        </a>
+
+        <button className='button btn-call-to-action'>
+          <a href={MyCV} download='Dylan-Littlewood-CV' target='_blank' rel='noreferrer'>
+            Download
+          </a>
+        </button>
       </div>
     </div>
   );
