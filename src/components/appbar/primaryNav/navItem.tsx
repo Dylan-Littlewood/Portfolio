@@ -10,7 +10,7 @@ export default function NavItem(props: { link: string; setOpen: (arg0: boolean) 
         to={props.link.toLowerCase()}
         spy={true}
         smooth={true}
-        offset={0}
+        offset={-100}
         duration={500}
         onClick={() => props.setOpen(false)}
       >

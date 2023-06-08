@@ -2,10 +2,8 @@ import { Projects } from './projects';
 
 export default function Portfolio() {
   return (
-    <section className='projects-section'>
-      <h2 className='section-title' id='portfolio'>
-        My Portfolio
-      </h2>
+    <section className='section portfolio' id='portfolio'>
+      <h2 className='section-title'>My Portfolio</h2>
       <p className='section-content'>
         These are a few of the projects i have worked on.
         <br />

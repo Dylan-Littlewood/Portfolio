@@ -1,3 +1,5 @@
+import { Button } from 'react-scroll';
+
 export default function Hero() {
   return (
     <section className='hero-section'>
@@ -5,7 +7,15 @@ export default function Hero() {
         Making <span>Your</span> Designs A Reality
       </h2>
       <p className='section-content'>Frontend software developer from Sheffield</p>
-      <button className='button btn-call-to-action'>See my work</button>
+      <Button
+        className='button btn-call-to-action'
+        type='submit'
+        value='See My Work'
+        to='portfolio'
+        smooth={true}
+        offset={0}
+        duration={500}
+      ></Button>
     </section>
   );
 }

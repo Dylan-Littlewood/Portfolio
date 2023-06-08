@@ -6,7 +6,7 @@
     "activeProjects":[
     {
         "title": "Portfolio Website",
-        "description": "this is a test description 1",
+        "description": "My portfolio website is where i showcase all of the projects that i have undertaken while learning web development. I used Vite, React, Typescript, SCSS and firebase for this project.",
         "imageURL": "/projectImages/Portfolio Website.png",
         "liveLink": "https://portfolio-97437.web.app/",
         "sourceLink": "https://github.com/Dylan-Littlewood/Portfolio"
@@ -17,33 +17,5 @@
         "imageURL": "/projectImages/Assembly Sync.png",
         "liveLink": "https://assembly-sync.web.app/",
         "sourceLink": "https://github.com/Dylan-Littlewood/assembly-sync"
-    },
-    {
-        "title": "test3",
-        "description": "this is a test description 3",
-        "imageURL": "/projectImages/ProjectNotFound.png",
-        "liveLink": "https://portfolio-97437.web.app/",
-        "sourceLink": "https://github.com/Dylan-Littlewood/Portfolio"
-    },
-    {
-        "title": "test4",
-        "description": "this is a test description 4",
-        "imageURL": "/projectImages/ProjectNotFound.png",
-        "liveLink": "https://portfolio-97437.web.app/",
-        "sourceLink": "https://github.com/Dylan-Littlewood/Portfolio"
-    },
-    {
-        "title": "test5",
-        "description": "this is a test description 5",
-        "imageURL": "/projectImages/ProjectNotFound.png",
-        "liveLink": "https://portfolio-97437.web.app/",
-        "sourceLink": "https://github.com/Dylan-Littlewood/Portfolio"
-    },
-    {
-        "title": "test6",
-        "description": "this is a test description 6",
-        "imageURL": "/projectImages/ProjectNotFound.png",
-        "liveLink": "https://portfolio-97437.web.app/",
-        "sourceLink": "https://github.com/Dylan-Littlewood/Portfolio"
     }
 ]}

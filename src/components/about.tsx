@@ -1,7 +1,8 @@
 export default function About() {
   return (
-    <h2 className='test section-title' id='about'>
-      About Me
-    </h2>
+    <div className='section about' id='about'>
+      <h2 className='section-title'>About Me</h2>
+      <p className='section-content'>a little bit about me</p>
+    </div>
   );
 }

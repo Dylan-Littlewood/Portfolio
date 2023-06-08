@@ -17,5 +17,6 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
       <CV />
       <Portfolio />
     </main>
+    <footer></footer>
   </React.StrictMode>
 );
