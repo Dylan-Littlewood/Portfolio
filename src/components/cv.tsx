@@ -41,7 +41,7 @@ export default function CV() {
           must think on the spot to uncover solutions to issues with incompatible specifications. It has also allowed me
           to enhance my attention to detail as I have developed effective cable management skills to ensure the machines
           look immaculate for the customer. I also volunteer to represent my team in our Events Committee, planning
-          teambuilding activities from company bake sales to gaming competitions. I am also certified to drive a
+          team-building activities from company bake sales to gaming competitions. I am also certified to drive a
           counterbalance forklift.
         </p>
         <h3>INTERESTS</h3>

@@ -6,6 +6,7 @@
     "activeProjects":[
     {
         "title": "Portfolio Website",
+        "tags":["Vite", "React", "Typescript", "SCSS", "Firebase"],
         "description": "My portfolio website is where i showcase all of the projects that i have undertaken while learning web development. I used Vite, React, Typescript, SCSS and firebase for this project.",
         "imageURL": "/projectImages/Portfolio Website.png",
         "liveLink": "https://portfolio-97437.web.app/",
@@ -13,7 +14,8 @@
     },
     {
         "title": "Assembly Sync",
-        "description": "this is a test description 2",
+        "tags":["Vite", "React", "Typescript", "Tailwind", "Firebase"],
+        "description": "Assembly Sync is an application i am creating to solve an issue at work where we need dashboards for our orders that is linked to a schedule while being easy to use. I am using the UI from shadcn for this project.",
         "imageURL": "/projectImages/Assembly Sync.png",
         "liveLink": "https://assembly-sync.web.app/",
         "sourceLink": "https://github.com/Dylan-Littlewood/assembly-sync"

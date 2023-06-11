@@ -2,6 +2,8 @@
   background-color: hsl(var(--color-foreground-hsl), 0.1);
   padding: 1rem;
   border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
   img {
     border-radius: 1rem;
   }
@@ -18,5 +20,18 @@
   font-weight: 400;
   font-size: 1rem;
   color: var(--color-text-subheading);
-  margin-bottom: 0.5rem;
+  margin-block: 0.5rem;
+}
+
+.card-buttons {
+  --gap: 2rem;
+  justify-content: space-evenly;
+  margin-top: auto;
+  padding-top: 0.5rem;
+  .btn-outline {
+    @media (min-width: 1200px) {
+      font-size: 0.75rem;
+    }
+    font-size: 1rem;
+  }
 }

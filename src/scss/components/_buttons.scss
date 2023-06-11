@@ -16,3 +16,16 @@
   background-color: transparent;
   border: 2px solid var(--color-foreground);
 }
+
+.tag {
+  background-color: var(--color-primary);
+  border: none;
+  border-radius: 100vw;
+  padding: 0.1em 1em;
+  margin: 0.25rem;
+  color: var(--color-text);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  font-size: 0.75rem;
+  display: inline-block;
+}
